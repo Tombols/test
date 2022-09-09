@@ -101,16 +101,8 @@
 int main(void)
 {
 	printf("number		square		cube \n");
-	int a;
-	int b;
-	int c;
 
-	for (int i = 0; i < 11; i++) {
-		a = i, b = a * a, c = a * a * a;
-		printf("%d\t\t%d\t\t%d\n", a, b, c);
-	}
-
-	/*int a = 0, b = a * a, c = a * a * a;
+	int a = 0, b = a * a, c = a * a * a;
 	printf("%d\t\t%d\t\t%d\n", a, b, c);
 
 	a = 1, b = a * a, c = a * a * a;
@@ -141,7 +133,6 @@ int main(void)
 	printf("%d\t\t%d\t\t%d\n", a, b, c);
 	
 	a = 10, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);*/
-
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
 
 }
