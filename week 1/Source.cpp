@@ -101,22 +101,47 @@
 int main(void)
 {
 	printf("number		square		cube \n");
+	int a;
+	int b;
+	int c;
 
-	int a, b, c, d, e, f, g, h, i, j;
+	for (int i = 0; i < 11; i++) {
+		a = i, b = a * a, c = a * a * a;
+		printf("%d\t\t%d\t\t%d\n", a, b, c);
+	}
 
-	a = 0;
-	b == 0 * 0;
-	c == 0 * 0 * 0;
+	/*int a = 0, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
 
-	printf("a		b		c");
-	scanf_s("%d\n", &a, &b, &c);
+	a = 1, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+	
+	a = 2, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+	
+	a = 3, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	a = 4, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	a = 5, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	a = 6, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	a = 7, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	a = 8, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	a = 9, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);
+	
+	a = 10, b = a * a, c = a * a * a;
+	printf("%d\t\t%d\t\t%d\n", a, b, c);*/
 
 
-
-	/*a == a + x;
-		b == a * a;
-		c == a * a * a;
-
-		int x
-		x == */
 }
