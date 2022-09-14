@@ -98,41 +98,97 @@
 //}
 
 //2.31
-int main(void)
+//int main(void)
+//{
+	//printf("number		square		cube \n");
+
+	//int a = 0, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 1, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 2, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 3, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 4, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 5, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 6, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 7, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 8, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 9, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+	//a = 10, b = a * a, c = a * a * a;
+	//printf("%d\t\t%d\t\t%d\n", a, b, c);
+
+//}
+
+//3.19
+
+//int main(void)
 {
-	printf("number		square		cube \n");
+float principal;
+float rate;
+float days;
+float interest;
 
-	int a = 0, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
 
-	a = 1, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
-	
-	a = 2, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
-	
-	a = 3, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
+printf("Enter loan principal\n");
+scanf_s("%f", &principal);
 
-	a = 4, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
+while (principal != -1)
+{
 
-	a = 5, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
+	printf("Enter interest rate\n");
+	scanf_s("%f", &rate);
 
-	a = 6, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
+	printf("Enter term of the loan in days\n");
+	scanf_s("%f", &days);
 
-	a = 7, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
-
-	a = 8, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
-
-	a = 9, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
-	
-	a = 10, b = a * a, c = a * a * a;
-	printf("%d\t\t%d\t\t%d\n", a, b, c);
-
+	interest = principal * rate * days / 365;
+	printf("The interest charge is $%f", interest);
 }
+}
+
+//3.21
+
+//int main(void)
+//{
+	//int a = 5;
+
+	//printf("%d\n", a);
+	//printf("%d\n", ++a);
+	//printf("%d\n\n", a);
+
+	//a = 5;
+	//printf("%d\n", a);
+	//printf("%d\n", a++);
+	//printf("%d\n", a);
+//}
+
+//3.22
+
+//int main(void)
+//{
+	//int number;
+
+	//printf("Enter a number");
+	//scanf_s("%d", &number);
+
+	//if ()
+
+//}
