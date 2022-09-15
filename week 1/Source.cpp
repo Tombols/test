@@ -140,55 +140,70 @@
 //3.19
 
 //int main(void)
-{
-float principal;
-float rate;
-float days;
-float interest;
-
-
-printf("Enter loan principal\n");
-scanf_s("%f", &principal);
-
-while (principal != -1)
-{
-
-	printf("Enter interest rate\n");
-	scanf_s("%f", &rate);
-
-	printf("Enter term of the loan in days\n");
-	scanf_s("%f", &days);
-
-	interest = principal * rate * days / 365;
-	printf("The interest charge is $%f", interest);
-}
-}
-
+//{
+//
+//float principal;
+//float rate;
+//int days;
+//float interest;
+//
+//principal = 0;
+//
+//while (principal != -1) {
+//
+//printf("%s", "Enter loan principal, (-1 to end): ");
+//scanf_s("%f", &principal);
+//
+//printf("%s", "Enter interest rate: ");
+//scanf_s("%f", &rate);
+//
+//printf("%s", "Enter term of the loan in days: ");
+//scanf_s("%d", &days);
+//
+//interest = (float)principal * rate * days / 365;
+//printf("The interest charge is $%.2f: \n\n", interest);
+//}
+//return 0;
+//}
 //3.21
 
 //int main(void)
 //{
-	//int a = 5;
-
-	//printf("%d\n", a);
-	//printf("%d\n", ++a);
-	//printf("%d\n\n", a);
-
-	//a = 5;
-	//printf("%d\n", a);
-	//printf("%d\n", a++);
-	//printf("%d\n", a);
+//	int a = 5;
+//
+//	printf("%d\n", a);
+//	printf("%d\n", ++a);
+//	printf("%d\n\n", a);
+//
+//	a = 5;
+//	printf("%d\n", a);
+//	printf("%d\n", a++);
+//	printf("%d\n", a);
 //}
 
 //3.22
 
-//int main(void)
-//{
-	//int number;
+int main(void)
+{
+	int number;
+	int b = 0;
 
-	//printf("Enter a number");
-	//scanf_s("%d", &number);
+		printf("Enter a number\n");
+		scanf_s("%d", &number);
 
-	//if ()
+		for (int i = 1; i <= number; i++) {
+			if (number % i == 0) {
+				++b;
+			}
+		}
+		if (b == 2) {
+			printf("%d is a prime number\n\n", number);
+		}
+		else {
+			printf("%d is not a prime number\n\n", number);
+		}
 
-//}
+	}
+
+	
+	
