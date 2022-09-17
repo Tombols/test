@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include <stdio.h>
 
 //function begins excercise 2.17
 //int main(void)
@@ -183,27 +183,68 @@
 
 //3.22
 
-int main(void)
+//int main(void)
+//{
+//	int number;
+//	int b = 0;
+//
+//		printf("Enter a number\n");
+//		scanf_s("%d", &number);
+//
+//		for (int i = 1; i <= number; i++) {
+//			if (number % i == 0) {
+//				++b;
+//			}
+//		}
+//		if (b == 2) {
+//			printf("%d is a prime number\n\n", number);
+//		}
+//		else {
+//			printf("%d is not a prime number\n\n", number);
+//		}
+//
+//	}
+
+//3.23
+
+//#include <stdio.h>
+//int main(void)
+//{
+//	unsigned int number[10];
+//	unsigned int counter;
+//	unsigned int largest;
+//	printf("enter the amount of units sold by each person\n");
+//	
+//	for (counter = 0; counter < 10; counter++){
+//		scanf_s("%d", &number[counter]);
+//	}
+//
+//	largest = number[0];
+//	for (counter = 0; counter < 10; counter++) {
+//		if (number[counter] > largest) {
+//			largest = number[counter];
+//	}
+//	}
+//	printf("%d is the largest", largest);
+//	return 0;
+//}
+
+//3.24
+
+#include <stdio.h>
+int main(void) 
 {
-	int number;
-	int b = 0;
+	printf("N\tN2\tN3\tN4\n\n");
+	
+	int a[4] = { 1, 2, 3, 4 };
+	int b[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	int i;
+	
+	//for (i = 1; i <= 4 ; i++) {
 
-		printf("Enter a number\n");
-		scanf_s("%d", &number);
-
-		for (int i = 1; i <= number; i++) {
-			if (number % i == 0) {
-				++b;
-			}
-		}
-		if (b == 2) {
-			printf("%d is a prime number\n\n", number);
-		}
-		else {
-			printf("%d is not a prime number\n\n", number);
-		}
-
+		//printf("%d\t%d\t%d\t%d", &a[0], &a[1], &a[2], &a[3]);
+	//}
+	for (i = 1; i <= 10; i++) {
+			printf("%d\n", &b[i]);
 	}
-
-	
-	
+}
