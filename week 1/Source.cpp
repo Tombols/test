@@ -232,19 +232,16 @@
 //3.24
 
 #include <stdio.h>
-int main(void) 
+int main(void)
 {
 	printf("N\tN2\tN3\tN4\n\n");
-	
-	int a[4] = { 1, 2, 3, 4 };
-	int b[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	int i;
-	
-	//for (i = 1; i <= 4 ; i++) {
 
-		//printf("%d\t%d\t%d\t%d", &a[0], &a[1], &a[2], &a[3]);
-	//}
-	for (i = 1; i <= 10; i++) {
-			printf("%d\n", &b[i]);
+	int a[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+	for (int i = 1; i <= 10; i++) {
+		int b = i * i;
+		int c = i * i * i;
+		int d = i * i * i * i;
+		printf("%d\t%d\t%d\t%d\t\n", a[i], b, c, d);
 	}
 }
