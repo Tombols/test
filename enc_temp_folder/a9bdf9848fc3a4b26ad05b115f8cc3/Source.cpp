@@ -277,7 +277,7 @@ int main(void)
 	int sum;
 	int average;
 
-	printf("Enter the number of values\n"); //ask numbers
+	printf("Enter a sequence of numbers\n"); //ask numbers
 	scanf_s("%d", &integer1);
 
 	while (integer1 != 0, integer1--) {
