@@ -183,6 +183,7 @@
 
 //3.22
 
+//#include <stdio.h>
 //int main(void)
 //{
 //	int number;
@@ -231,17 +232,31 @@
 
 //3.24
 
+//#include <stdio.h>
+//int main(void)
+//{
+//	printf("N\tN2\tN3\tN4\n\n");
+//
+//	for (int i = 1; i <= 10; i++) {
+//		int b = i * i;
+//		int c = i * i * i;
+//		int d = i * i * i * i;
+//		printf("%d\t%d\t%d\t%d\n", i, b, c, d);
+//	}
+//}
+
 #include <stdio.h>
-int main(void)
+int main (void)
 {
-	printf("N\tN2\tN3\tN4\n\n");
+	int nv;
+	int n;
+	printf("Enter number value\n");
+	scanf_s("%d", &nv);
 
-	int a[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-	for (int i = 1; i <= 10; i++) {
-		int b = i * i;
-		int c = i * i * i;
-		int d = i * i * i * i;
-		printf("%d\t%d\t%d\t%d\t\n", a[i], b, c, d);
-	}
+	printf("Enter %d numbers\n", nv);
+	
+	for (nv != 0; nv--) {
+		scanf_s("%d\n", &n);
+		printf(n);
+		}
 }
