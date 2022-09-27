@@ -283,36 +283,135 @@
 //	}
 //}
 
-#include <stdio.h>
-int main (void)
-{
-	int nv;
-	int n;
-	printf("Enter number value\n");
-	scanf_s("%d", &nv);
+//#include <stdio.h>
+//int main (void)
+//{
+//	int nv;
+//	int n;
+//	printf("Enter number value\n");
+//	scanf_s("%d", &nv);
+//
+//	printf("Enter %d numbers\n", nv); //ask numbers
+//
+//	while (nv !=, nv--) {
+//		scanf_s("%d", &n)
+//			printf("%d", n);
+	/*}*/
+	
+	/*sum = integer1 + integer2 + integer3 + integer4 + integer5 + integer6 + integer7;
+	average = sum / 7;*/
+//}
 
-	printf("Enter the number of values\n"); //ask numbers
-	scanf_s("%d", &integer1);
 
-	while (integer1 != 0, integer1--) {
-		scanf_s("%d%d%d%d%d%d%d%d%d", &integer2, &integer3, &integer4, &integer5, &integer6, &integer7);
-	}
 
-	sum = integer1 + integer2 + integer3 + integer4 + integer5 + integer6 + integer7;
-	average = sum / 7;
-
-}
-//4.14
+//4.9
 
 //#include <stdio.h>
 //int main(void) {
 //
+//	int nv, i, sum = 0, numbers;
+//	float average;
+//	printf("Enter number value:\n");
+//	scanf_s("%d", &nv);
 //
+//	printf("Enter %d numbers\n", nv);
+//	for (i = 0; i < nv; ++i) {
+//		scanf_s("%d", &numbers);
+//		sum = sum + numbers;
+//	}
+//	average = sum / nv;
+//
+//	printf("total %d numbers = %d\n", nv, sum);
+//	printf("average of %d numbers = %.1f", nv, average);
+//	
+//	return 0;
 //}
-	printf("Enter %d numbers\n", nv);
-	
-	for (nv != 0; nv--) {
-		scanf_s("%d\n", &n);
-		printf(n);
+
+
+//#include <stdio.h>
+//#include <math.h>
+//int main(void) {
+//
+//	int i;
+//	printf("N1\tN2\tN3\tN4\n\n");
+//
+//	for (i = 1; i <= 5; i++) {
+//		int a = pow(i, 2);
+//		int b = pow(i, 3);
+//		int c = pow(i, 4);
+//		int d = pow(i, 5);
+//		printf("%d\t%d\t%d\t%d\n", i, a, b, c);
+//	}
+//	return 0;
+//}
+
+//4.14
+//#include <stdio.h>
+//int main(void) {
+//
+//	int factorial = 1;
+//	printf("N1\tN2\n\n");
+//
+//	for (int i = 1; i <= 5; i++) {
+//		factorial *= i;
+//		printf("%d\t%d\n", i, factorial);
+//	}
+//	return 0;
+//}
+
+//factorial 20 wordt niet geprint omdat het een heel groot getal is.  
+
+//4.16
+#include <stdio.h>
+int main(void) {
+
+	int rows = 10;
+
+	for (int i = 1; i <= rows; ++i) {
+		for (int j = 1; j <= i; ++j)
+		{
+			printf("*");
 		}
+		printf("\n");
+	}
+	printf("\n");
+
+
+	
+	for (int i = rows; i >= 1; --i)
+	{
+		for (int j = 1; j <= i; ++j)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	printf("\n");
+
+
+
+	for (int i = rows; i >= 1; --i)
+	{
+		for (int k = rows - i; k > 0; k--)
+			printf(" ");
+		for (int j = 1; j <= i; ++j)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	printf("\n");
+
+	for (int i = 1; i <= rows; ++i)
+	{
+		for (int k = rows - i; k > 0; k--)
+			printf(" ");
+		for (int j = 1; j <= i; j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	printf("\n");
+	return 0;
 }
