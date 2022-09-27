@@ -231,6 +231,44 @@
 //}
 
 //3.24
+//for loop
+
+//#include <stdio.h>
+//int main(void)
+//{
+//	printf("N\tN2\tN3\tN4\n\n");
+//
+//	int a[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//
+//	for (int i = 1; i <= 10; i++) {
+//		int b = i * i;
+//		int c = i * i * i;
+//		int d = i * i * i * i;
+//		printf("%d\t%d\t%d\t%d\t\n", a[i], b, c, d);
+//	}
+//}
+
+
+
+//3.24
+//while loop
+
+//#include <stdio.h>
+//int main(void)
+//{
+//	printf("N\tN2\tN3\tN4\n\n");
+//
+//	int i = 1;
+//	int a[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//
+//	while (i <= 10) {
+//		int b = i * i;
+//		int c = i * i * i;
+//		int d = i * i * i * i;
+//		printf("%d\t%d\t%d\t%d\t\n", a[i], b, c, d);
+//		i++;
+//	}
+//}
 
 //#include <stdio.h>
 //int main(void)
@@ -253,6 +291,24 @@ int main (void)
 	printf("Enter number value\n");
 	scanf_s("%d", &nv);
 
+	printf("Enter the number of values\n"); //ask numbers
+	scanf_s("%d", &integer1);
+
+	while (integer1 != 0, integer1--) {
+		scanf_s("%d%d%d%d%d%d%d%d%d", &integer2, &integer3, &integer4, &integer5, &integer6, &integer7);
+	}
+
+	sum = integer1 + integer2 + integer3 + integer4 + integer5 + integer6 + integer7;
+	average = sum / 7;
+
+}
+//4.14
+
+//#include <stdio.h>
+//int main(void) {
+//
+//
+//}
 	printf("Enter %d numbers\n", nv);
 	
 	for (nv != 0; nv--) {
