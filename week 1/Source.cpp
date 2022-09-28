@@ -362,56 +362,119 @@
 //factorial 20 wordt niet geprint omdat het een heel groot getal is.  
 
 //4.16
+//#include <stdio.h>
+//int main(void) {
+//
+//	int rows = 10;
+//
+//	for (int i = 1; i <= rows; ++i) {
+//		for (int j = 1; j <= i; ++j)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	printf("\n");
+//
+//
+//	
+//	for (int i = rows; i >= 1; --i)
+//	{
+//		for (int j = 1; j <= i; ++j)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	printf("\n");
+//
+//
+//
+//	for (int i = rows; i >= 1; --i)
+//	{
+//		for (int k = rows - i; k > 0; k--)
+//			printf(" ");
+//		for (int j = 1; j <= i; ++j)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	printf("\n");
+//
+//	for (int i = 1; i <= rows; ++i)
+//	{
+//		for (int k = rows - i; k > 0; k--)
+//			printf(" ");
+//		for (int j = 1; j <= i; j++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	printf("\n");
+//	return 0;
+//}
+
+
+//4.20
+//
+//#include <stdio.h>
+//int main(void) {
+//
+//	printf("Condition 1\tCondition\t\tCondition 1 && Condition 2\n");
+//	printf("0\t\t0\t\t\t0\n");
+//	printf("0        \tnonzero \t\t0        \n");
+//	printf("nonzero         0\t\t\t0        \n");
+//	printf("nonzero         nonzero\t\t        1\n\n");
+//
+//	printf("Condition 1\tCondition\t\tCondition 1 && Condition 2\n");
+//	printf("0\t\t0\t\t\t0\n");
+//	printf("0        \tnonzero \t\t1        \n");
+//	printf("nonzero         0\t\t\t1        \n");
+//	printf("nonzero         nonzero\t\t        1\n\n");
+//
+//	printf("Condition 1\tCondition\n");
+//	printf("0\t\t1\n");
+//	printf("nonzero         0\n\n");
+//}
+
+//5.9; 5.10; 5.18; 5.22 en 5.39
+
+//5.9
+
+//$25 for 8 hours
+//additional $5 per hour after 8 hours
+//max charge is $50 exclusive of tax
+//$0.50 per hour as service tax
+
 #include <stdio.h>
+
+void calculateCharges(void);	//function protoype
+int maximum()
+
 int main(void) {
+	float charge;
+	/*int tax;*/
+	unsigned int hours;
+	/*int days;*/
+	unsigned int car;
 
-	int rows = 10;
+	printf("Car\tHours\tCharge\n");
 
-	for (int i = 1; i <= rows; ++i) {
-		for (int j = 1; j <= i; ++j)
-		{
-			printf("*");
+	if (car == 0; car < 3; car++) {
+		printf("Enter how much you got charged\n");
+		scanf_s("%d", &charge);
+
+		if (hours >= 8) {
+			charge *= 5; //still need per hour
 		}
-		printf("\n");
+
+		printf("Enter the amount of hours\n");
+		scanf_s("%d", &hours);
+
 	}
-	printf("\n");
-
-
-	
-	for (int i = rows; i >= 1; --i)
-	{
-		for (int j = 1; j <= i; ++j)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	printf("\n");
-
-
-
-	for (int i = rows; i >= 1; --i)
-	{
-		for (int k = rows - i; k > 0; k--)
-			printf(" ");
-		for (int j = 1; j <= i; ++j)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	printf("\n");
-
-	for (int i = 1; i <= rows; ++i)
-	{
-		for (int k = rows - i; k > 0; k--)
-			printf(" ");
-		for (int j = 1; j <= i; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	printf("\n");
-	return 0;
+	/*default:
+		printf("%d", "incorrect charge entered");
+		puts("Enter a new grade");*/
 }
