@@ -448,33 +448,102 @@
 //max charge is $50 exclusive of tax
 //$0.50 per hour as service tax
 
-#include <stdio.h>
-
-void calculateCharges(void);	//function protoype
-int maximum()
-
-int main(void) {
-	float charge;
-	/*int tax;*/
-	unsigned int hours;
-	/*int days;*/
-	unsigned int car;
-
-	printf("Car\tHours\tCharge\n");
-
-	if (car == 0; car < 3; car++) {
-		printf("Enter how much you got charged\n");
-		scanf_s("%d", &charge);
-
-		if (hours >= 8) {
-			charge *= 5; //still need per hour
-		}
-
-		printf("Enter the amount of hours\n");
-		scanf_s("%d", &hours);
-
-	}
+//#include <stdio.h>
+//
+//void calculateCharges(void);	//function protoype
+//int maximum()
+//
+//int main(void) {
+//	float charge;
+//	/*int tax;*/
+//	unsigned int hours;
+//	/*int days;*/
+//	unsigned int car;
+//
+//	printf("Car\tHours\tCharge\n");
+//
+//	if (car == 0; car < 3; car++) {
+//		printf("Enter how much you got charged\n");
+//		scanf_s("%d", &charge);
+//
+//		if (hours >= 8) {
+//			charge *= 5; //still need per hour
+//		}
+//
+//		printf("Enter the amount of hours\n");
+//		scanf_s("%d", &hours);
+//
+//	}
 	/*default:
 		printf("%d", "incorrect charge entered");
 		puts("Enter a new grade");*/
-}
+//}
+
+//5.10
+//int ceil(int x);
+//
+//int main(void)
+//{
+//	
+//	
+//}
+//
+//int ceil(int x)
+//{
+//	unsigned int x;
+//	int y;
+//
+//	y = ceil(x + .5);
+//	
+//	if ()
+//	{
+//		y =
+//	}
+//}
+
+
+//#include <stdio.h>
+//
+//int isEven(int nr);
+//
+//int main()
+//{
+//	int harry;
+//	printf("Give a value for x: ");
+//	scanf_s("%d", &harry);
+//	int j = isEven(harry);
+//
+//	if (j == 1)
+//	{
+//		printf("%d is een even getal", harry);
+//	}
+//	
+//	else
+//	{
+//		printf("%d is een oneven getal", harry);
+//	}
+//}
+//
+//int isEven(int nr)
+//{
+//	if ((nr % 2) == 0)
+//	{
+//		return 1;
+//	}
+//
+//	else
+//	{
+//		return 0;
+//	}
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int leeftijd[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
+//
+//	for (int i = 0; i < 20; i++)
+//	{
+//		printf("%d\n", leeftijd[i]);
+//	}
+//}
