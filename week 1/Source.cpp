@@ -479,26 +479,30 @@
 		puts("Enter a new grade");*/
 //}
 
-//5.10
+//5.10 niet af
+//#include <stdio.h>
+//
 //int ceil(int x);
 //
 //int main(void)
 //{
+//	int y;
+//	int x;
+//	printf("give value x");
+//	scanf_s("%d", &x)l
 //	
-//	
-//}
+//		y = ceil(x + .5);
+//
+//	printf("%d", y);
 //
 //int ceil(int x)
 //{
 //	unsigned int x;
 //	int y;
 //
-//	y = ceil(x + .5);
-//	
-//	if ()
-//	{
-//		y =
-//	}
+//	double ceil(double x);
+//
+//	return y;
 //}
 
 
@@ -547,3 +551,60 @@
 //		printf("%d\n", leeftijd[i]);
 //	}
 //}
+
+//6.10, 6.11, 6.14,	6.19, 6.22
+
+//6.10
+
+#include <stdio.h>
+
+float sales(float salaries);
+
+int main(void)
+{
+	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
+	int range[] = { 200 - 299, 300 - 399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
+
+	for (size_t i = 0; i < 9; i++)
+	{
+		printf("%s\t", i, string[i]);
+		printf("%d\n", i, range[i]);
+	}
+
+}
+
+float sales(float salaries)
+{
+	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
+	int range[] = { 200 - 299, 300,399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
+
+	int bruto;
+
+	printf("vul je bruto inkomen in: \n");
+	scanf_s("%d", &bruto);
+
+	salaries = 200 + (0.09 * bruto);
+
+	if (salaries > 200 && salaries < 299)
+		return range[0];
+}
+
+
+#include <stdio.h>
+int main(void)
+{
+	int category[9];
+
+	do
+	{
+		printf("Enter the gross");
+		scanf_s("%d", &gross);
+
+		salary = 200 + 0.09 * gross;
+
+	} 
+	while (salary != -1) {
+
+		return 0;
+	}
+}
