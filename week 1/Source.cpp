@@ -448,33 +448,99 @@
 //max charge is $50 exclusive of tax
 //$0.50 per hour as service tax
 
+//#include <stdio.h>
+//float calculateCharges(int hours) 
+//{
+//	float charge = 25;
+//	int extra;
+//	int tax = 0.5;
+//	float days;
+//	int max = 50;
+//
+//	if (hours > 8)
+//	{
+//		extra = hours - 8;
+//		charge = charge + (5 * extra);
+//	}
+//
+//	if (charge > 50) 
+//	{
+//		charge = max;
+//	}
+//
+//	if (hours >= 24) 
+//	{
+//		days = hours / 24;
+//		charge = charge / days;
+//	}
+//
+//	if (hours != 0)
+//	{
+//		tax = tax * hours;
+//	}
+//
+//	return charge;
+//
+//}
+//
+//
+//int main(void) 
+//{
+//	int hours;
+//
+//	for (int i = 1; i <= 3; i++) 
+//	{
+//		scanf_s("%d", &hours);
+//		printf("Car\tHours\tCharge\n");
+//		printf("%d\t%d\t%.2f", i, hours, calculateCharges(hours));
+//	}
+//
+//}
+
+
+//5.10
+
+//#include <stdio.h>
+//#include <math.h>
+//
+//int main(void)
+//{
+//
+//	int x;
+//	int y;
+//
+//	printf("Define X\n");
+//	scanf_s("%d", &x);
+//	
+//	y = ceil(x + .5);
+//	printf("Y = %d", y);
+//
+//	return 0;
+//}
+
+//5.18
+
 #include <stdio.h>
 
-void calculateCharges(void);	//function protoype
-int maximum()
+float isEven(int total)
+{
+	int total = 0;
 
-int main(void) {
-	float charge;
-	/*int tax;*/
-	unsigned int hours;
-	/*int days;*/
-	unsigned int car;
-
-	printf("Car\tHours\tCharge\n");
-
-	if (car == 0; car < 3; car++) {
-		printf("Enter how much you got charged\n");
-		scanf_s("%d", &charge);
-
-		if (hours >= 8) {
-			charge *= 5; //still need per hour
-		}
-
-		printf("Enter the amount of hours\n");
-		scanf_s("%d", &hours);
-
+	scanf_s("%d", &n);
+	while (n % 2 == 0)
+	{
+		scanf_s("%d", &n);
+		printf("%d", n);
+		total = total + n;
 	}
-	/*default:
-		printf("%d", "incorrect charge entered");
-		puts("Enter a new grade");*/
+	return n;
+}
+int main(void)
+{
+	int n;
+
+	printf("Enter an integer\n");
+	scanf_s("%d", &n);
+
+	printf (%f, isEven);
 }
