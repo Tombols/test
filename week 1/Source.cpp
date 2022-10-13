@@ -572,21 +572,6 @@ int main(void)
 	}
 
 }
-
-float sales(float salaries)
-{
-	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
-	int range[] = { 200 - 299, 300,399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
-
-	int bruto;
-
-	printf("vul je bruto inkomen in: \n");
-	scanf_s("%d", &bruto);
-
-	salaries = 200 + (0.09 * bruto);
-
-	if (salaries > 200 && salaries < 299)
-		return range[0];
 }
 
 
@@ -603,8 +588,6 @@ int main(void)
 		salary = 200 + 0.09 * gross;
 
 	} 
-	while (salary != -1) {
-
-		return 0;
 	}
+	printf("%d", smallest);
 }
