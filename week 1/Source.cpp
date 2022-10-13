@@ -449,98 +449,162 @@
 //$0.50 per hour as service tax
 
 //#include <stdio.h>
-//float calculateCharges(int hours) 
-//{
-//	float charge = 25;
-//	int extra;
-//	int tax = 0.5;
-//	float days;
-//	int max = 50;
 //
-//	if (hours > 8)
-//	{
-//		extra = hours - 8;
-//		charge = charge + (5 * extra);
-//	}
+//void calculateCharges(void);	//function protoype
+//int maximum()
 //
-//	if (charge > 50) 
-//	{
-//		charge = max;
-//	}
+//int main(void) {
+//	float charge;
+//	/*int tax;*/
+//	unsigned int hours;
+//	/*int days;*/
+//	unsigned int car;
 //
-//	if (hours >= 24) 
-//	{
-//		days = hours / 24;
-//		charge = charge / days;
-//	}
+//	printf("Car\tHours\tCharge\n");
 //
-//	if (hours != 0)
-//	{
-//		tax = tax * hours;
-//	}
+//	if (car == 0; car < 3; car++) {
+//		printf("Enter how much you got charged\n");
+//		scanf_s("%d", &charge);
 //
-//	return charge;
+//		if (hours >= 8) {
+//			charge *= 5; //still need per hour
+//		}
 //
-//}
-//
-//
-//int main(void) 
-//{
-//	int hours;
-//
-//	for (int i = 1; i <= 3; i++) 
-//	{
+//		printf("Enter the amount of hours\n");
 //		scanf_s("%d", &hours);
-//		printf("Car\tHours\tCharge\n");
-//		printf("%d\t%d\t%.2f", i, hours, calculateCharges(hours));
-//	}
 //
+//	}
+	/*default:
+		printf("%d", "incorrect charge entered");
+		puts("Enter a new grade");*/
 //}
 
-
-//5.10
-
+//5.10 niet af
 //#include <stdio.h>
-//#include <math.h>
+//
+//int ceil(int x);
 //
 //int main(void)
 //{
-//
+//	int y;
 //	int x;
+//	printf("give value x");
+//	scanf_s("%d", &x)l
+//	
+//		y = ceil(x + .5);
+//
+//	printf("%d", y);
+//
+//int ceil(int x)
+//{
+//	unsigned int x;
 //	int y;
 //
-//	printf("Define X\n");
-//	scanf_s("%d", &x);
-//	
-//	y = ceil(x + .5);
-//	printf("Y = %d", y);
+//	double ceil(double x);
 //
-//	return 0;
+//	return y;
 //}
 
-//5.18
+
+//#include <stdio.h>
+//
+//int isEven(int nr);
+//
+//int main()
+//{
+//	int harry;
+//	printf("Give a value for x: ");
+//	scanf_s("%d", &harry);
+//	int j = isEven(harry);
+//
+//	if (j == 1)
+//	{
+//		printf("%d is een even getal", harry);
+//	}
+//	
+//	else
+//	{
+//		printf("%d is een oneven getal", harry);
+//	}
+//}
+//
+//int isEven(int nr)
+//{
+//	if ((nr % 2) == 0)
+//	{
+//		return 1;
+//	}
+//
+//	else
+//	{
+//		return 0;
+//	}
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int leeftijd[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
+//
+//	for (int i = 0; i < 20; i++)
+//	{
+//		printf("%d\n", leeftijd[i]);
+//	}
+//}
+
+//6.10, 6.11, 6.14,	6.19, 6.22
+
+//6.10
 
 #include <stdio.h>
 
-float isEven(int total)
-{
-	int total = 0;
+float sales(float salaries);
 
-	scanf_s("%d", &n);
-	while (n % 2 == 0)
-	{
-		scanf_s("%d", &n);
-		printf("%d", n);
-		total = total + n;
-	}
-	return n;
-}
 int main(void)
 {
-	int n;
+	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
+	int range[] = { 200 - 299, 300 - 399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
 
-	printf("Enter an integer\n");
-	scanf_s("%d", &n);
+	for (size_t i = 0; i < 9; i++)
+	{
+		printf("%s\t", i, string[i]);
+		printf("%d\n", i, range[i]);
+	}
 
-	printf (%f, isEven);
+}
+
+float sales(float salaries)
+{
+	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
+	int range[] = { 200 - 299, 300,399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
+
+	int bruto;
+
+	printf("vul je bruto inkomen in: \n");
+	scanf_s("%d", &bruto);
+
+	salaries = 200 + (0.09 * bruto);
+
+	if (salaries > 200 && salaries < 299)
+		return range[0];
+}
+
+
+#include <stdio.h>
+int main(void)
+{
+	int category[9];
+
+	do
+	{
+		printf("Enter the gross");
+		scanf_s("%d", &gross);
+
+		salary = 200 + 0.09 * gross;
+
+	} 
+	while (salary != -1) {
+
+		return 0;
+	}
 }
