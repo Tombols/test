@@ -443,68 +443,87 @@
 
 //5.9
 
-//$25 for 8 hours
-//additional $5 per hour after 8 hours
-//max charge is $50 exclusive of tax
-//$0.50 per hour as service tax
-
 //#include <stdio.h>
 //
-//void calculateCharges(void);	//function protoype
-//int maximum()
+//int main (void)//function protoype
+//{
+//	unsigned int hours1;
+//	unsigned int hours2;
+//	unsigned int hours3;
+//	
+//	printf("hours rented by customer 1: \n");
+//	scanf_s("%d", &hours1);
+//	printf("hours rented customer 2: \n");
+//	scanf_s("%d", &hours2);
+//	printf("hours rented customer 3: \n");
+//	scanf_s("%d", &hours3);
 //
-//int main(void) {
-//	float charge;
-//	/*int tax;*/
-//	unsigned int hours;
-//	/*int days;*/
-//	unsigned int car;
+//	float charge1 = 25 + 5 * hours1;
+//	float charge2 = 25 + 5 * hours2;
+//	float charge3 = 25 + 5 * hours3;
 //
-//	printf("Car\tHours\tCharge\n");
-//
-//	if (car == 0; car < 3; car++) {
-//		printf("Enter how much you got charged\n");
-//		scanf_s("%d", &charge);
-//
-//		if (hours >= 8) {
-//			charge *= 5; //still need per hour
-//		}
-//
-//		printf("Enter the amount of hours\n");
-//		scanf_s("%d", &hours);
-//
+//if (hours1 > 9)
+//	{
+//		int extra = hours1 - 9;
+//		float charge1 = 25 + (5 * extra) + (0.50 * hours1);
+//		printf("car\t%d\t%.2f\n", hours1, charge1);
 //	}
-	/*default:
-		printf("%d", "incorrect charge entered");
-		puts("Enter a new grade");*/
+//
+//	else
+//	{
+//		printf("car\t%d\t%.2f\n", hours1, charge1);
+//	}
+//
+//if (hours2 > 9)
+//	{
+//		int extra = hours2 - 9;
+//		float charge2 = 25 + (5 * extra) + (0.50 * hours2);
+//		printf("car\t%d\t%.2f\n", hours2, charge2);
+//	}
+//
+//	else
+//	{
+//		printf("car\t%d\t%.2f\n", hours2, charge2);
+//	}
+//
+//if (hours3 > 9)
+//	{
+//		int extra = hours3 - 9;
+//		float charge3 = 25 + (5 * extra) + (0.50 * hours3);
+//		printf("car\t%d\t%.2f\n", hours3, charge3);
+//	}
+//		
+//	else
+//	{
+//		printf("car\t%d\t%.2f", hours3, charge3);
+//	}
 //}
 
-//5.10 niet af
+//5.10
+
 //#include <stdio.h>
 //
-//int ceil(int x);
+//int ceil(float);
+//int main()
+//{
+//	float number;
 //
-//int main(void)
+//	printf("Geef een nummer:\t\n");
+//	scanf_s("%f", &number);
+//
+//	printf("De ceil van %.1f is %d\n", number, ceil(number));
+//
+//}
+//
+//int ceil(float x)
 //{
 //	int y;
-//	int x;
-//	printf("give value x");
-//	scanf_s("%d", &x)l
-//	
-//		y = ceil(x + .5);
 //
-//	printf("%d", y);
-//
-//int ceil(int x)
-//{
-//	unsigned int x;
-//	int y;
-//
-//	double ceil(double x);
-//
+//	y = x + .5;
 //	return y;
 //}
 
+//5.18
 
 //#include <stdio.h>
 //
@@ -541,53 +560,138 @@
 //	}
 //}
 
-//#include <stdio.h>
-//int main()
-//{
-//	int leeftijd[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
-//
-//	for (int i = 0; i < 20; i++)
-//	{
-//		printf("%d\n", leeftijd[i]);
-//	}
-//}
+//5.22
+
+#include <stdio.h>
+int round(float);
+int remainder(int);
+int main()
+{
+	
+
+}
+	
+int round(float)
+{
+	int a;
+	int b;
+
+	printf("Give a value for a:\n");
+	scanf_s("%d", &a);
+
+	printf("Give a value for b:\n");
+	scanf_s("%d", &b);
+		
+	int x = a / b;
+	int y;
+	y = round(x);
+	return y;
+	}
+	
+int remainder(int)
+{
+	int a;
+	int b;
+	int x = a / b;
+
+	if (x)
+}
+
+}
 
 //6.10, 6.11, 6.14,	6.19, 6.22
 
 //6.10
+//
+//#include <stdio.h>
+//
+//float sales(float salaries);
+//
+//int main(void)
+//{
+//	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
+//	int range[] = { 200 - 299, 300 - 399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
+//
+//	for (size_t i = 0; i < 9; i++)
+//	{
+//		printf("%s\t", i, string[i]);
+//		printf("%d\n", i, range[i]);
+//	}
+//
+//}
+//}
+//
+//
+//#include <stdio.h>
+//int main(void)
+//{
+//	int category[9];
+//
+//	do
+//	{
+//		printf("Enter the gross");
+//		scanf_s("%d", &gross);
+//
+//		salary = 200 + 0.09 * gross;
+//
+//	} 
+//	}
+//	printf("%d", smallest);
+//}
 
-#include <stdio.h>
+//6.10
 
-float sales(float salaries);
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int category[9] = { 0 }; // init all values to 0
+//	int gross;
+//
+//	do
+//	{
+//		printf("Enter the gross (-1 to stop): ");
+//		scanf_s("%d", &gross);
+//
+//		if (gross != -1)
+//		{
+//			int salary = 200 + 0.09 * gross;
+//
+//			for (int i = 0; i < 8; i++)
+//			{
+//				// check category
+//				if (salary > ((2 + i) * 100) && salary < (((2 + i) * 100) + 99))
+//				{
+//					category[i]++;
+//				}
+//			}
+//			if (salary > 1000)
+//			{
+//				category[8]++;
+//			}
+//		}
+//	} while (gross != -1);
+//
+//	for (int i = 0; i < 8; i++)
+//	{
+//		printf("%d - %d: %d\n", ((2 + i) * 100), (((2 + i) * 100) + 99), category[i]);
+//	}
+//	printf("    >1000: %d\n", category[8]);
+//
+//	return 0;
+//}
 
-int main(void)
-{
-	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
-	int range[] = { 200 - 299, 300 - 399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
 
-	for (size_t i = 0; i < 9; i++)
-	{
-		printf("%s\t", i, string[i]);
-		printf("%d\n", i, range[i]);
-	}
+//6.19
 
-}
-}
+//#include<stdio.h>
+//#include <cstdlib>
+//#define MAX 36000
+//int main(void)
+//{
+//	int array1[] = {1,2,3,4,5,6};
+//	int array2[] = {1,2,3,4,5,6};
+//
+//	int random = rand() % 6 + 1;
+//}
 
-
-#include <stdio.h>
-int main(void)
-{
-	int category[9];
-
-	do
-	{
-		printf("Enter the gross");
-		scanf_s("%d", &gross);
-
-		salary = 200 + 0.09 * gross;
-
-	} 
-	}
-	printf("%d", smallest);
-}
