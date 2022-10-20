@@ -167,6 +167,7 @@
 //}
 //3.21
 
+//#include <stdio.h>
 //int main(void)
 //{
 //	int a = 5;
@@ -251,24 +252,6 @@
 
 
 //3.24
-//while loop
-
-//#include <stdio.h>
-//int main(void)
-//{
-//	printf("N\tN2\tN3\tN4\n\n");
-//
-//	int i = 1;
-//	int a[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-//
-//	while (i <= 10) {
-//		int b = i * i;
-//		int c = i * i * i;
-//		int d = i * i * i * i;
-//		printf("%d\t%d\t%d\t%d\t\n", a[i], b, c, d);
-//		i++;
-//	}
-//}
 
 //#include <stdio.h>
 //int main(void)
@@ -556,38 +539,184 @@
 
 //6.10
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int category[9] = { 0 }; // init all values to 0
+//	int gross;
+//	printf("What is your gross income?\n");
+//	scanf_s("%d", &gross);
+//	int salary = 200 + 0.09 * gross;
+//
+//	for (int i = 0; i < 8; i++)
+//	{
+//		// check category
+//		if (salary > ((2 + i) * 100) && salary < (((2 + i) * 100) + 99))
+//		{
+//			category[i]++;
+//		}
+//	}
+//	if (salary > 1000)
+//	{
+//		category[8]++;
+//	}
+//
+//	for (int i = 0; i < 8; i++)
+//	{
+//		printf("%d - %d: %d\n", ((2 + i) * 100), (((2 + i) * 100) + 99), category[i]);
+//	}
+//	printf("    >1000: %d\n", category[8]);
+//
+//	return 0;
+//}
 
-float sales(float salaries);
+//6.11
 
-int main(void)
-{
-	char string[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' };
-	int range[] = { 200 - 299, 300 - 399, 400 - 499, 500 - 599, 600 - 699, 700 - 799, 800 - 899, 900 - 999, 1000 };
+//#include <stdio.h>
+//int main(void)
+//#define SIZE 10
+//{
+//	int a[SIZE] = { 32, 27, 63, 18, 95, 38, 47, 12, 11, 43 };
+//
+//	puts("The values of the original array are:\n");
+//
+//	for (size_t i = 0; i < SIZE; ++i)
+//	{
+//		printf("%4d", a[i]);
+//	}
+//
+//	for (unsigned int pass = 1; pass < SIZE; ++pass)
+//	{
+//		for (size_t i = 0; i < SIZE - 1; ++i)
+//		{
+//			if (a[i] > a[i + 1])
+//			{
+//				int hold = a[i];
+//				a[i] = a[i + 1];
+//				a[i + 1] = hold;
+//			}
+//		}
+//	}
+//	puts("\nData item in ascending order");
+//
+//	for (size_t i = 0; i < SIZE; ++i)
+//	{
+//		printf("%4d", a[i]);
+//	}
+//	puts("");
+//}
 
-	for (size_t i = 0; i < 9; i++)
-	{
-		printf("%s\t", i, string[i]);
-		printf("%d\n", i, range[i]);
-	}
+//6.14
 
-}
-}
+//#include <stdio.h>
+//#define SIZE 10
+//int main(void)
+//{
+//	int a[SIZE] = {};
+//	int b[SIZE] = {};
+//	
+//	int countera = 0;
+//	int counterb = 0;
+//	
+//	puts("Enter the first set of numbers");
+//
+//	for (size_t i = 0; i < SIZE; ++i)
+//	{
+//		scanf_s("%d", &a[i]);
+//		countera += 1;
+//	}
+//
+//	for (unsigned int pass = 1; pass < SIZE; ++pass)
+//	{
+//		for (size_t i = 0; i < SIZE; ++i)
+//		{
+//			if (a[i] > a[i + 1])
+//			{
+//				int hold = a[i];
+//				a[i] = a[i + 1];
+//				a[i + 1] = hold;
+//			}
+//		}
+//	}
+//
+//	puts("\nEnter the second set of numbers");
+//
+//	for (size_t i = 0; i < SIZE; ++i)
+//	{
+//		scanf_s("%d", &b[i]);
+//		countera += 1;
+//	}
+//
+//	for (unsigned int pass = 1; pass < SIZE; ++pass)
+//	{
+//		for (size_t i = 0; i < SIZE; ++i)
+//		{
+//			if (b[i] > b[i + 1])
+//			{
+//				int hold = b[i];
+//				b[i] = b[i + 1];
+//				b[i + 1] = hold;
+//			}
+//		}
+//	}
+//}
 
+//6.19
 
-#include <stdio.h>
-int main(void)
-{
-	int category[9];
-
-	do
-	{
-		printf("Enter the gross");
-		scanf_s("%d", &gross);
-
-		salary = 200 + 0.09 * gross;
-
-	} 
-	}
-	printf("%d", smallest);
-}
+//#include <stdio.h>
+//#include<cstdlib>
+//#define MAX 10
+//
+//int main(void)
+//{
+//	int array[6] = { 1, 2, 3, 4, 5, 6 };
+//	int rolls = 36000;
+//
+//	
+//	
+//	int dice;
+//	int Count1 = 0;
+//	int Count2 = 0;
+//	int Count3 = 0;
+//	int Count3 = 0;
+//	int Count4 = 0;
+//	int Count5 = 0;
+//	int Count6 = 0;
+//
+//	for (size_t i = 0; i < MAX; ++i)
+//	{
+//		int random = rand() % 7;
+//		printf("%3d", random);
+//	
+//	}
+//	
+//	switch (MAX)
+//	{
+//		case 1;
+//		++Count1;
+//			break;
+//
+//		case 2;
+//		++Count2;
+//			break;
+//
+//		case 3;
+//		++Count3;
+//			break;
+//
+//		case 4;
+//		++Count4;
+//			break;
+//			
+//		case 5;
+//		+Count5;
+//			break;
+//				
+//		case 6;
+//		++Count6;
+//			break;
+//	}
+//	printf("")
+//}
+//6.22
